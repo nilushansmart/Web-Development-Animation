@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sky {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    animation-name: moveSky;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveSky{
+    0%{left: 0%;}
+    100%{left: -100%;}
+}
+
+.city {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 3.5%;
+    left: 0;
+    z-index: -4;
+    animation-name: moveCity;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveCity{
+    0%{left: 0%;}
+    100%{left: -100%;}
+}
+
+.car {
+    width: 40%;
+    position: absolute;
+    bottom: 3.5%;
+    left: 8.5%;
+    z-index: 10;
+    animation-name: moveCar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveCar{
+    0%{left: 0%;}
+    100%{left: 60%;}
+}
+
+.wheel {
+    width: 7%;
+    position: absolute;
+    bottom: 4%;
+    z-index: 3;
+}
+
+@keyframes backWheelRotation{
+    0%{left: 3.5%;}
+    100%{left: 63.5%;}
+}
+
+@keyframes frontWheelRotation{
+    0%{left: 28%;}
+    100%{left: 88%;}
+}
+
+ @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+#backWheel {
+    left: 12%;
+    animation-name: backWheelRotation, spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#frontWheel {
+    left: 36.5%;
+    animation-name: frontWheelRotation, spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.road {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation-name: moveRoad ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveRoad{
+    0%{left: 0%;}
+    100%{left: -100%;}
+}
