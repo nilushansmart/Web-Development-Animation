@@ -11,9 +11,9 @@
     top: 0;
     left: 0;
     z-index: -5;
-    animation-name: moveSky;
+    /* animation-name: moveSky;
     animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes moveSky{
@@ -28,9 +28,9 @@
     bottom: 3.5%;
     left: 0;
     z-index: -4;
-    animation-name: moveCity;
+    /* animation-name: moveCity;
     animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes moveCity{
@@ -43,7 +43,7 @@
     position: absolute;
     bottom: 3.5%;
     left: 8.5%;
-    z-index: 10;
+    z-index: 2;
     animation-name: moveCar;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -58,7 +58,7 @@
     width: 7%;
     position: absolute;
     bottom: 4%;
-    z-index: 3;
+    z-index: 2;
 }
 
 @keyframes backWheelRotation{
@@ -100,9 +100,9 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    animation-name: moveRoad ;
+    /* animation-name: moveRoad ;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes moveRoad{
